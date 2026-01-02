@@ -1,0 +1,463 @@
+{
+	"name": "SqlServerDemobigtable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "mylocalsql",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "ColStr1",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr2",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr3",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr4",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr5",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr6",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr7",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr8",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr9",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr10",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr11",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr12",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr13",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr14",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr15",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr16",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr17",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr18",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr19",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr20",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr21",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr22",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr23",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr24",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr25",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr26",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr27",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr28",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr29",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr30",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr31",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr32",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr33",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr34",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr35",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr36",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr37",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr38",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr39",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr40",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr41",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr42",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr43",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr44",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr45",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr46",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr47",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr48",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr49",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr50",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr51",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr52",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr53",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr54",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr55",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr56",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr57",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr58",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr59",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColStr60",
+				"type": "nvarchar"
+			},
+			{
+				"name": "ColDate1",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ColDate2",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ColDate3",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ColDate4",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ColDate5",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ColDate6",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ColDate7",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ColDate8",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ColDate9",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ColDate10",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ColDate11",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ColDate12",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ColDate13",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ColDate14",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ColDate15",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ColDate16",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ColDate17",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ColDate18",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ColDate19",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ColDate20",
+				"type": "datetime",
+				"precision": 23,
+				"scale": 3
+			},
+			{
+				"name": "ColGuid1",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "ColGuid2",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "ColGuid3",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "ColGuid4",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "ColGuid5",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "ColGuid6",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "ColGuid7",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "ColGuid8",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "ColGuid9",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "ColGuid10",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "ColGuid11",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "ColGuid12",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "ColGuid13",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "ColGuid14",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "ColGuid15",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "ColGuid16",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "ColGuid17",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "ColGuid18",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "ColGuid19",
+				"type": "uniqueidentifier"
+			},
+			{
+				"name": "ColGuid20",
+				"type": "uniqueidentifier"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "DemoBigTable"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

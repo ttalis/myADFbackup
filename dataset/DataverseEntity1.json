@@ -1,0 +1,16 @@
+{
+	"name": "DataverseEntity1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "myppDemoDataverse",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "CommonDataServiceForAppsEntity",
+		"schema": [],
+		"typeProperties": {
+			"entityName": "cr327_demobigtable3"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

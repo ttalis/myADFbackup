@@ -1,0 +1,9 @@
+{
+	"name": "adflocalsqltopp",
+	"location": "japaneast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "87b3f5d1-b461-4fd4-91aa-5858442ac0db",
+		"tenantId": "84e91d61-2569-4f89-9fb7-6ca877670635"
+	}
+}

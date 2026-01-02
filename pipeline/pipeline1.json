@@ -1,0 +1,1172 @@
+{
+	"name": "pipeline1",
+	"properties": {
+		"activities": [
+			{
+				"name": "Copy data from local sqlserver",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "SqlServerSource",
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"sink": {
+						"type": "CommonDataServiceForAppsSink",
+						"writeBatchSize": 1000,
+						"writeBehavior": "upsert",
+						"ignoreNullValues": false,
+						"alternateKeyName": "cr327_primarykey",
+						"bypassPowerAutomateFlows": false
+					},
+					"enableStaging": false,
+					"translator": {
+						"type": "TabularTranslator",
+						"mappings": [
+							{
+								"source": {
+									"name": "ID",
+									"type": "Int32",
+									"physicalType": "int"
+								},
+								"sink": {
+									"name": "cr327_id",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr1",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr1",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr2",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr2",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr3",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr3",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr4",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr4",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr5",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr5",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr6",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr6",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr7",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr7",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr8",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr8",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr9",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr9",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr10",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr10",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr11",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr11",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr12",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr12",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr13",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr13",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr14",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr14",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr15",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr15",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr16",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr16",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr17",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr17",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr18",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr18",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr19",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr19",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr20",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr20",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr21",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr21",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr22",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr22",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr23",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr23",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr24",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr24",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr25",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr25",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr26",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr26",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr27",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr27",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr28",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr28",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr29",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr29",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr30",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr30",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr31",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr31",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr32",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr32",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr33",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr33",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr34",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr34",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr35",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr35",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr36",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr36",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr37",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr37",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr38",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr38",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr39",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr39",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr40",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr40",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr41",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr41",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr42",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr42",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr43",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr43",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr44",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr44",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr45",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr45",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr46",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr46",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr47",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr47",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr48",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr48",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr49",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr49",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr50",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr50",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr51",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr51",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr52",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr52",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr53",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr53",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr54",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr54",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr55",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr55",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr56",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr56",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr57",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr57",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr58",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr58",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr59",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr59",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColStr60",
+									"type": "String",
+									"physicalType": "nvarchar"
+								},
+								"sink": {
+									"name": "cr327_colstr60",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColDate1",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "cr327_coldate1",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "ColDate2",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "cr327_coldate2",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "ColDate3",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "cr327_coldate3",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "ColDate4",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "cr327_coldate4",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "ColDate5",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "cr327_coldate5",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "ColDate6",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "cr327_coldate6",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "ColDate7",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "cr327_coldate7",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "ColDate8",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "cr327_coldate8",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "ColDate9",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "cr327_coldate9",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "ColDate10",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "cr327_coldate10",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "ColDate11",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "cr327_coldate11",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "ColDate12",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "cr327_coldate12",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "ColDate13",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "cr327_coldate13",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "ColDate14",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "cr327_coldate14",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "ColDate15",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "cr327_coldate15",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "ColDate16",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "cr327_coldate16",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "ColDate17",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "cr327_coldate17",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "ColDate18",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "cr327_coldate18",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "ColDate19",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "cr327_coldate19",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "ColDate20",
+									"type": "DateTime",
+									"physicalType": "datetime"
+								},
+								"sink": {
+									"name": "cr327_coldate20",
+									"type": "DateTime"
+								}
+							},
+							{
+								"source": {
+									"name": "ColGuid1",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "cr327_colguid1",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColGuid2",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "cr327_colguid2",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColGuid3",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "cr327_colguid3",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColGuid4",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "cr327_colguid4",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColGuid5",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "cr327_colguid5",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColGuid6",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "cr327_colguid6",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColGuid7",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "cr327_colguid7",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColGuid8",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "cr327_colguid8",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColGuid9",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "cr327_colguid9",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColGuid10",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "cr327_colguid10",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColGuid11",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "cr327_colguid11",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColGuid12",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "cr327_colguid12",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColGuid13",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "cr327_colguid13",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColGuid14",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "cr327_colguid14",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColGuid15",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "cr327_colguid15",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColGuid16",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "cr327_colguid16",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColGuid17",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "cr327_colguid17",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColGuid18",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "cr327_colguid18",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColGuid19",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "cr327_colguid19",
+									"type": "String"
+								}
+							},
+							{
+								"source": {
+									"name": "ColGuid20",
+									"type": "Guid",
+									"physicalType": "uniqueidentifier"
+								},
+								"sink": {
+									"name": "cr327_demobigtable_2id",
+									"type": "Guid"
+								}
+							}
+						],
+						"typeConversion": true,
+						"typeConversionSettings": {
+							"allowDataTruncation": true,
+							"treatBooleanAsNumber": false
+						}
+					}
+				},
+				"inputs": [
+					{
+						"referenceName": "SqlServerDemobigtable",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DataverseEntity1",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2026-01-02T14:44:15Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
