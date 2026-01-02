@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adflocalsqltopp"
+		},
+		"FileServer1_password": {
+			"value": ""
+		},
+		"mylocalsql_password": {
+			"value": ""
+		},
+		"myppDemoDataverse_servicePrincipalCredential": {
+			"value": ""
+		},
+		"FileServer1_properties_typeProperties_host": {
+			"value": "\\\\192.168.5.50\\home\\csv"
+		},
+		"FileServer1_properties_typeProperties_userId": {
+			"value": "metalis"
+		},
+		"mylocalsql_properties_typeProperties_server": {
+			"value": "ROG13600"
+		},
+		"mylocalsql_properties_typeProperties_database": {
+			"value": "testDB"
+		},
+		"mylocalsql_properties_typeProperties_userName": {
+			"value": "sa"
+		},
+		"myppDemoDataverse_properties_typeProperties_servicePrincipalId": {
+			"value": "703009a7-bd48-4e07-b952-480e2f806dea"
+		}
+	}
+}
